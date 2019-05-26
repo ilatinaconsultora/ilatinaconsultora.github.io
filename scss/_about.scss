@@ -1,0 +1,22 @@
+.about-section {
+  padding-top: 10rem;
+  @include background('../img/bg-ilatina2.png');
+  p {
+    margin-bottom: 5rem;
+  }
+  h2{
+    color: #1a2748;
+    font-family: 'Varela Round';
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+    letter-spacing: 0.8rem;
+    background: -webkit-linear-gradient(fade-out($letter-color, 0.1), fade-out($letter-color, 0.5));
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+  }
+
+  .altura-media{
+     height: 365px;
+     width: 488px;
+  }
+}

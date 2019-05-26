@@ -1,0 +1,23 @@
+.projects-section {
+  @include background('../img/bg-ilatina2.png');
+  
+  .container {
+    padding-top: 10rem;
+  }
+
+  .project-text {
+    padding: 3rem;
+    font-size: 90%;
+    @media (min-width: 992px) {
+      padding: 5rem;
+      hr {
+        border-color: $primary;
+        border-width: .25rem;
+        width: 30%;
+      }
+    }
+  }
+  .project{
+    background: $gray-900;
+  }
+}

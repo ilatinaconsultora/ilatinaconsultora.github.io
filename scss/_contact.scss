@@ -1,0 +1,45 @@
+.contact-section {
+  @include background('../img/bg-ilatina.png');
+  padding: 5rem 0 0;
+
+  h2{
+    @include titulo($letter-color);
+  }
+  .container {
+    padding-top: 10rem;
+  }
+@import 'form-contact.scss';
+  .card {
+    border: 0;
+    border-bottom: 0.25rem solid $primary;
+    h4 {
+      font-size: 0.8rem;
+      font-family: 'Varela Round';
+      text-transform: uppercase;
+      letter-spacing: 0.15rem;
+    }
+    hr {
+      border-color: $primary;
+      border-width: 0.25rem;
+      width: 3rem;
+    }
+  }
+  .social {
+    margin-top: 5rem;
+    a {
+      text-align: center;
+      height: 3rem;
+      width: 3rem;
+      background: $primary;
+      border-radius: 100%;
+      line-height: 3rem;
+      color: fade-out($letter-color, 0.7);
+      &:hover {
+        color: fade-out($yellow, 0.5);
+      }
+      &:active {
+        color: $yellow;
+      }
+    }
+  }
+}
